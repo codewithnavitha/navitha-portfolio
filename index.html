@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Navitha V – Cloud & DevOps Engineer</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@400;600;800&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#F2F6F7;--surface:#FFFFFF;--ink:#0F2236;--muted:#546A7B;--line:#D5DFE5;--ok:#0E9F77;--accent:#E39A0B;--btn:#0F2236;--btnink:#F2F6F7;
+box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px);color-scheme:light}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#0C1824;--surface:#132536;--ink:#E8F0F4;--muted:#9AB0BF;--line:#25394B;--ok:#3DD6A8;--accent:#F3B73F;--btn:#E8F0F4;--btnink:#0C1824;color-scheme:dark}}
+:root[data-theme="dark"]{--bg:#0C1824;--surface:#132536;--ink:#E8F0F4;--muted:#9AB0BF;--line:#25394B;--ok:#3DD6A8;--accent:#F3B73F;--btn:#E8F0F4;--btnink:#0C1824;color-scheme:dark}
+html{scroll-padding-top:env(safe-area-inset-top,0px);scroll-behavior:smooth}
+*,*::before,*::after{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font:400 17px/1.6 "Bricolage Grotesque",system-ui,-apple-system,"Segoe UI",sans-serif}
+a{color:inherit}
+:focus-visible{outline:3px solid var(--accent);outline-offset:3px}
+.wrap{max-width:1040px;margin:0 auto;padding:0 24px}
+.mono{font-family:"IBM Plex Mono",ui-monospace,Menlo,Consolas,monospace}
+nav{position:sticky;top:env(safe-area-inset-top,0px);background:var(--bg);border-bottom:1px solid var(--line);z-index:5}
+nav .wrap{display:flex;gap:20px;align-items:center;justify-content:space-between;height:56px}
+nav ul{display:flex;gap:20px;list-style:none;margin:0;padding:0;overflow-x:auto}
+nav a{text-decoration:none;color:var(--muted);font-size:15px;white-space:nowrap}
+nav a:hover{color:var(--ink)}
+.brand{font-weight:800;text-decoration:none}
+button.t{background:none;border:1px solid var(--line);color:var(--ink);border-radius:8px;padding:6px 10px;font:inherit;font-size:14px;cursor:pointer}
+header.hero{padding:72px 0 56px}
+h1{font-size:clamp(44px,9vw,92px);line-height:.98;letter-spacing:-.03em;font-weight:800;margin:0 0 20px}
+.role{font-size:clamp(20px,3vw,26px);color:var(--muted);margin:0 0 28px;max-width:34ch}
+.cta{display:flex;flex-wrap:wrap;gap:12px;margin-bottom:48px}
+.btn{display:inline-block;padding:12px 20px;border-radius:10px;text-decoration:none;font-weight:600;border:1.5px solid var(--btn)}
+.btn.p{background:var(--btn);color:var(--btnink)}
+.btn:hover{transform:translateY(-1px)}
+.pipe{background:var(--surface);border:1px solid var(--line);border-radius:14px;padding:20px;font-size:14px}
+.pipe h2{font-size:14px;font-weight:500;margin:0 0 14px;color:var(--muted)}
+.stages{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;margin:0;padding:0;list-style:none}
+.stages li{border-top:3px solid var(--line);padding-top:10px;transition:border-color .3s}
+.stages li b{display:block;font-weight:500}
+.stages li span{color:var(--muted);font-size:13px}
+.stages li.done{border-color:var(--ok)}
+.stages li.done b::before{content:"✓ ";color:var(--ok)}
+.pipe .res{margin-top:14px;color:var(--ok);min-height:1.5em}
+section{padding:56px 0;border-top:1px solid var(--line)}
+h2.s{font-size:clamp(28px,4vw,40px);letter-spacing:-.02em;margin:0 0 28px;line-height:1.1}
+.about p{max-width:62ch;margin:0 0 14px}
+.skills{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:0 40px}
+.sk{padding:16px 0;border-bottom:1px solid var(--line)}
+.sk h3{margin:0 0 6px;font-size:17px}
+.chips{display:flex;flex-wrap:wrap;gap:6px}
+.chips span{font-size:13px;padding:3px 10px;border:1px solid var(--line);border-radius:999px;background:var(--surface)}
+.job{display:grid;grid-template-columns:200px 1fr;gap:8px 32px;padding:24px 0;border-bottom:1px solid var(--line)}
+.job .when{color:var(--muted);font-size:14px}
+.job h3{margin:0 0 4px;font-size:20px}
+.job .co{color:var(--muted);margin:0 0 10px}
+ul.pts{margin:0;padding-left:20px;max-width:68ch}
+ul.pts li{margin-bottom:6px}
+.proj{display:grid;grid-template-columns:repeat(auto-fit,minmax(290px,1fr));gap:20px}
+.card{background:var(--surface);border:1px solid var(--line);border-radius:14px;padding:22px;display:flex;flex-direction:column;gap:10px}
+.card h3{margin:0;font-size:20px}
+.card .tech{font-size:12.5px;color:var(--muted)}
+.card ul{margin:0;padding-left:18px;font-size:15.5px}
+.card a.l{margin-top:auto;font-weight:600}
+.certs{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:20px}
+.cert{display:flex;gap:16px;align-items:center;background:var(--surface);border:1px solid var(--line);border-radius:14px;padding:18px}
+.badge{flex:none;width:76px;height:76px;border-radius:12px;display:grid;place-items:center;font-weight:800;font-size:13px;text-align:center;line-height:1.15;padding:6px}
+.b1{background:#0096FF;color:#fff}.b2{background:#04483F;color:#fff}
+.cert h3{margin:0;font-size:17px;line-height:1.25}
+.cert p{margin:2px 0 0;color:var(--muted);font-size:14px}
+.contact p{max-width:52ch;margin:0 0 20px}
+footer{padding:28px 0 40px;color:var(--muted);font-size:14px;border-top:1px solid var(--line)}
+@media (max-width:640px){.stages{grid-template-columns:1fr 1fr}.job{grid-template-columns:1fr}nav ul{gap:14px}}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}.btn:hover{transform:none}}
+</style>
+</head>
+<body>
+<nav><div class="wrap">
+<a class="brand" href="#top">Navitha V</a>
+<ul><li><a href="#about">About</a></li><li><a href="#skills">Skills</a></li><li><a href="#experience">Experience</a></li><li><a href="#projects">Projects</a></li><li><a href="#certs">Certifications</a></li><li><a href="#contact">Contact</a></li></ul>
+<button class="t" id="theme" type="button" aria-label="Toggle light and dark theme">Theme</button>
+</div></nav>
+
+<main id="top">
+<header class="hero"><div class="wrap">
+<h1>Navitha V</h1>
+<p class="role">Cloud &amp; DevOps engineer building reliable, automated delivery pipelines on AWS.</p>
+<div class="cta">
+<a class="btn p" href="#contact">Get in touch</a>
+<a class="btn" id="lnk-resume" href="resume.pdf">Download resume</a>
+<a class="btn" id="lnk-li" href="https://linkedin.com/in/navithanavi" target="_blank" rel="noopener">LinkedIn</a>
+<a class="btn" id="lnk-gh" href="https://github.com/codewithnavitha" target="_blank" rel="noopener">GitHub</a>
+</div>
+<div class="pipe mono" aria-label="Deployment pipeline summary">
+<h2>pipeline: navitha-delivery</h2>
+<ol class="stages" id="stages">
+<li><b>Commit</b><span>Git · GitHub</span></li>
+<li><b>Build</b><span>Maven · Docker</span></li>
+<li><b>Provision</b><span>Terraform · Ansible</span></li>
+<li><b>Deploy</b><span>Jenkins · AWS</span></li>
+</ol>
+<div class="res" id="res" aria-live="polite"></div>
+</div>
+</div></header>
+
+<section id="about" class="about"><div class="wrap">
+<h2 class="s">About</h2>
+<p>I automate cloud deployments and keep production servers healthy. At Trident Media Works I cut release time by 30% by moving AWS server setup and releases into Terraform and Jenkins pipelines.</p>
+<p>I also built a full multi-tier CI/CD project with Vagrant, Ansible, Maven, Jenkins and Tomcat, and I run Linux servers with monitoring, backups and root-cause troubleshooting. I’m looking to join a DevOps or Cloud team.</p>
+</div></section>
+
+<section id="skills"><div class="wrap">
+<h2 class="s">Skills</h2>
+<div class="skills">
+<div class="sk"><h3>Cloud (AWS)</h3><div class="chips"><span>EC2</span><span>S3</span><span>VPC</span><span>IAM</span><span>RDS</span><span>CloudWatch</span></div></div>
+<div class="sk"><h3>CI/CD</h3><div class="chips"><span>Jenkins</span><span>GitHub Actions</span><span>GitLab CI/CD</span><span>Maven</span><span>JFrog Artifactory</span></div></div>
+<div class="sk"><h3>Containers</h3><div class="chips"><span>Docker</span><span>Kubernetes</span></div></div>
+<div class="sk"><h3>IaC and configuration</h3><div class="chips"><span>Terraform</span><span>Ansible</span><span>Vagrant</span></div></div>
+<div class="sk"><h3>Version control</h3><div class="chips"><span>Git</span><span>GitHub</span><span>GitHub Enterprise</span></div></div>
+<div class="sk"><h3>Servers and databases</h3><div class="chips"><span>Linux</span><span>NGINX</span><span>Apache Tomcat</span><span>MySQL</span><span>SQL</span><span>Bash</span></div></div>
+<div class="sk"><h3>Practices</h3><div class="chips"><span>Release management</span><span>Monitoring &amp; backup</span><span>Production troubleshooting</span></div></div>
+<div class="sk"><h3>Web (additional)</h3><div class="chips"><span>WordPress</span><span>Shopify Liquid</span><span>HTML</span><span>CSS</span><span>JavaScript</span></div></div>
+</div>
+</div></section>
+
+<section id="experience"><div class="wrap">
+<h2 class="s">Experience</h2>
+<div class="job"><div class="when mono">Oct 2023 – Aug 2026</div><div>
+<h3>Web Developer (DevOps &amp; Cloud responsibilities)</h3><p class="co">Trident Media Works · AWS, Terraform, Jenkins, Linux, NGINX, MySQL</p>
+<ul class="pts"><li>Cut deployment time by 30% by automating server configuration and releases with Terraform and Jenkins pipelines.</li><li>Led a team deploying scalable applications on AWS, improving performance and reliability.</li><li>Set up infrastructure monitoring and backup/restore strategies to protect security and data integrity.</li><li>Resolved complex production server issues with cross-functional teams, reducing downtime through root-cause analysis.</li></ul></div></div>
+<div class="job"><div class="when mono">Feb 2022 – Mar 2023</div><div>
+<h3>Web Designer &amp; WordPress Support</h3><p class="co">RAS Infotech Limited</p>
+<ul class="pts"><li>Supported migration of websites to cloud-based hosting, improving uptime and scalability.</li><li>Optimised site performance and handled proactive maintenance and rapid issue resolution.</li></ul></div></div>
+<div class="job"><div class="when mono">Jul 2021 – Dec 2021</div><div>
+<h3>WordPress Developer</h3><p class="co">Shrungi Technologies</p>
+<ul class="pts"><li>Built and customised WordPress sites, including themes, plugins and page layouts.</li><li>Maintained live sites and improved page load performance.</li></ul></div></div>
+</div></section>
+
+<section id="projects"><div class="wrap">
+<h2 class="s">Projects</h2>
+<div class="proj">
+<article class="card"><h3>VProfile: multi-tier deployment and CI/CD</h3>
+<div class="tech mono">Vagrant · Ansible · Maven · Jenkins · Tomcat · MySQL · RabbitMQ · Memcached · Elasticsearch</div>
+<ul><li>Provisioned a multi-tier Java app on Linux VMs with Vagrant and Ansible for repeatable environments.</li><li>Built a Jenkins pipeline: GitHub commit, Maven build, packaging, automated Tomcat deploy.</li><li>Debugged service connectivity using logs and configuration checks.</li></ul>
+<a class="l" href="https://github.com/codewithnavitha/vprofile-project" target="_blank" rel="noopener">View on GitHub</a></article>
+<article class="card"><h3>AWS infrastructure automation</h3>
+<div class="tech mono">AWS · Terraform · Jenkins · Linux · NGINX · CloudWatch</div>
+<ul><li>Replaced manual setup with version-controlled Terraform for EC2, VPC, IAM, S3 and RDS.</li><li>Integrated Terraform into Jenkins to automate server configuration and releases.</li><li>Added CloudWatch monitoring and backup/restore procedures.</li></ul></article>
+<article class="card"><h3>NYRIO: e-commerce store and Android app</h3>
+<div class="tech mono">Shopify · DNS · SSL · Android Studio · Google Play</div>
+<ul><li>Managed DNS, SSL, deployments and production troubleshooting for a live store.</li><li>Built and released the Android app on Google Play with versioning and release management.</li></ul>
+<a class="l" href="https://nyrio.in" target="_blank" rel="noopener">Visit nyrio.in</a></article>
+</div>
+</div></section>
+
+<section id="certs"><div class="wrap">
+<h2 class="s">Certifications and education</h2>
+<div class="certs">
+<div class="cert"><div class="badge b1">LFS162</div><div><h3>Introduction to DevOps and Site Reliability Engineering</h3><p>The Linux Foundation</p></div></div>
+<div class="cert"><div class="badge b2">IBM Cloud</div><div><h3>Cloud Essentials</h3><p>IBM · Nov 16, 2026 · <a href="https://www.credly.com/badges/f61bc869-a11f-4a96-bb14-38d2a04dfc43" target="_blank" rel="noopener">Verify on Credly</a></p></div></div>
+<div class="cert"><div class="badge" style="background:var(--ink);color:var(--bg)">B.E.</div><div><h3>B.E. in Computer Science Engineering</h3><p>Amruta Institute of Technology · 2019 · Honors</p></div></div>
+</div>
+</div></section>
+
+<section id="contact" class="contact"><div class="wrap">
+<h2 class="s">Let’s talk</h2>
+<p>I’m open to DevOps and Cloud roles in Bengaluru or remote. The fastest way to reach me is email.</p>
+<div class="cta" style="margin:0">
+<a class="btn p" id="lnk-mail" href="mailto:navithav0297@gmail.com">Email me</a>
+<a class="btn" id="lnk-li2" href="https://linkedin.com/in/navithanavi" target="_blank" rel="noopener">LinkedIn</a>
+<a class="btn" id="lnk-gh2" href="https://github.com/codewithnavitha" target="_blank" rel="noopener">GitHub</a>
+</div>
+</div></section>
+</main>
+<footer><div class="wrap">© 2026 Navitha V · Bengaluru, India</div></footer>
+
+<script>
+(function(){
+var items=[].slice.call(document.querySelectorAll('#stages li')),res=document.getElementById('res');
+var reduce=window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+function finish(){items.forEach(function(i){i.classList.add('done')});res.textContent='Pipeline passed. Ready to ship.'}
+if(reduce){finish()}else{items.forEach(function(el,i){setTimeout(function(){el.classList.add('done');if(i===items.length-1)res.textContent='Pipeline passed. Ready to ship.'},500+i*650)})}
+var b=document.getElementById('theme');
+b.addEventListener('click',function(){
+var r=document.documentElement,dark=r.getAttribute('data-theme')?r.getAttribute('data-theme')==='dark':window.matchMedia('(prefers-color-scheme: dark)').matches;
+r.setAttribute('data-theme',dark?'light':'dark');
+});
+})();
+</script>
+</body>
+</html>
